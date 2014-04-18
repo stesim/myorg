@@ -1,0 +1,72 @@
+gtkmm__CustomObject_TransparentWindow GtkBin
+{
+	background: none;
+	/*background-color: rgba(0,0,0,0.5);*/
+	/*border: 1px solid #888;*/
+	border: none;
+}
+
+gtkmm__CustomObject_TransparentWindow gtkmm__CustomObject_CalendarButton > GtkBox > GtkButton
+{
+	border-left: 2px solid #FFF;
+	background: rgba(150,150,150,0.5);
+	color: #222;
+}
+
+gtkmm__CustomObject_TransparentWindow gtkmm__CustomObject_CalendarButton.today > GtkBox > GtkButton
+{
+	border-left: 2px solid #FFF;
+}
+
+gtkmm__CustomObject_TransparentWindow gtkmm__CustomObject_CalendarButton.expanded > GtkButton
+{
+	/*border-bottom: 1px solid #BBB;*/
+}
+
+gtkmm__CustomObject_TransparentWindow gtkmm__CustomObject_CalendarButton.today > GtkButton
+{
+	border-bottom: 1px solid #FFF;
+	border-left: 2px solid white;
+}
+
+gtkmm__CustomObject_TransparentWindow GtkButton GtkLabel
+{
+	font-family: Clean;
+	font-size: 8px;
+	/*text-shadow: 2px 2px black;*/
+	background: inherit;
+}
+
+gtkmm__CustomObject_TransparentWindow GtkButton.header GtkLabel
+{
+	font-weight: bold;
+}
+
+gtkmm__CustomObject_TransparentWindow GtkButton
+{
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 0px;
+	text-shadow: none;
+	color: #CCC;
+}
+
+gtkmm__CustomObject_TransparentWindow GtkButton.weekend
+{
+	background-color: rgba(0,0,0,0.7);
+}
+
+gtkmm__CustomObject_TransparentWindow GtkButton.note
+{
+	background-color: rgba(80,0,0,0.5);
+}
+
+gtkmm__CustomObject_TransparentWindow GtkButton.note.weekend
+{
+	background-color: rgba(80,0,0,0.7);
+}
+
+gtkmm__CustomObject_TransparentWindow GtkButton:hover, GtkButton.note.weekend:hover
+{
+	background-color: rgba(6,138,186,0.5);
+	color: #FFF;
+}
